@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display:flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1{
+    font: 3.5 em;
+    color: hsla(331, 100%, 51%, 0.781)
+}
+
+.choices{
+   margin-bottom: 40px; 
+}
+
+.choices button{
+   font-size : 7.5em;
+   min-width: 160px;
+   margin: 0 10px;
+   border: none ;
+   border-radius: 250px;
+   background-color:hsla(331, 100%, 51%, 0.781);
+  cursor: pointer;
+}
+
+.choices button:hover{
+   background-color: hsla(331, 100%, 51%, 0.953);
+   rotate: 750deg;
+}
+
+
+
+#playerDisplay, #computerDisplay{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#resultDisplay{
+    font-size: 3em;
+   margin: 30px 0;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(2); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.pinkText {
+    color: hsla(331, 100%, 51%, 0.781);
+    animation: explode 0.5s ease-in-out;
+}
+
+.redText{
+color:red;
+text-decoration: line-through;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.tie {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+.container{
+    box-shadow: 5px, 5px , 5px hsla(0, 0%, 0%, 0.1);
+    border: 0.5px solid hsl(0, 0%,80%);
+    border-radius: 80px;
+    max-height: 500px;
+    padding: 20px;
+    margin: 20px;
+    display:inline-block;
+    box-shadow: 5px 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+
+
+
+}
